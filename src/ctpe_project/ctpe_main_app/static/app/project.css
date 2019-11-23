@@ -1,0 +1,14 @@
+.navbar-hero{
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800;
+  color:black
+}
+
+.navbar-item{
+  font-family: 'Roboto Condensed', sans-serif;
+  color:black;
+}
+
+.w-98{
+	width: 98%;
+}

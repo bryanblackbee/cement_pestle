@@ -22,283 +22,47 @@
 <body>
   <div class="container-fluid px-0 vh-100 w-100 d-flex flex-column">
   
-    <!-- row.navbar -->
-    <div class="row mx-0 w-100">
+    <!-- .row > .nav -->
+    <div class="row mx-0 w-100"> <!-- .nav for desktop -->
       <nav class="nav shadow-sm w-100 py-2 mb-1 d-none d-sm-block">
           <div class="d-flex flex-row justify-content-left">
-          <a class="nav-link navbar-hero d-block" href="#">CEMENT PESTLE</a>
+          <a class="nav-link navbar-hero d-block h5 my-0" href="#">CEMENT PESTLE</a>
           <a class="nav-link navbar-item " href="#">APPAREL</a>
           <a class="nav-link navbar-item " href="#">DINING</a>
           <a class="nav-link navbar-item " href="#">TRAVEL</a>
           </div>
-      </nav>
+      </nav><!-- /.nav for desktop -->
 
-      <nav class="nav shadow-sm w-100 d-block d-sm-none">
+      <nav class="nav shadow-sm w-100 d-block d-sm-none"> <!-- .nav for mobile -->
         <div class="d-flex flex-row justify-content-between">
-        <a class="nav-link navbar-hero d-block" href="#">CEMENT PESTLE</a>
-        <a class="nav-link navbar-item" data-toggle="dropdown" href="#" role="button" 
-        aria-haspopup="true" aria-expanded="false">CATEGORIES <i class="fas fa-bars"></i></a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item navbar-item" href="#">APPAREL</a>
-          <a class="dropdown-item navbar-item" href="#">DINING</a>
-          <a class="dropdown-item navbar-item" href="#">TRAVEL</a>
-        </div>
+          <a class="nav-link navbar-hero h4 my-0" href="#">CEMENT PESTLE</a>
+          <a class="nav-link navbar-item h4 my-0" data-toggle="dropdown" href="#" role="button" 
+          aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></a>
+          <div class="dropdown-menu w-98">
+            <a class="dropdown-item navbar-item text-right mb-1" href="#">APPAREL</a>
+            <a class="dropdown-item navbar-item text-right mb-1" href="#">DINING</a>
+            <a class="dropdown-item navbar-item text-right" href="#">TRAVEL</a>
+          </div>
         </div> 
-      </nav>
-    </div>
-    <!-- end row.navbar -->
+      </nav><!-- /.nav for mobile -->
 
-    <!-- row.main -->
-    <div class="row d-flex mx-2 flex-row overflow-hidden " style="height:800px">
+    </div><!-- / .row > .nav -->
+
+    <!-- .row  -->
+    <div class="row d-flex mx-2 flex-row overflow-hidden ">
         
-        <!-- col.1 -->
-        <div class="col-md-2 h-100 overflow-auto pt-3">
-          <p class="h5 font-lato  align-center"><strong>Trending</strong></p>
-          <table class="table table-sm font-crimson-text">
-            <tbody>
-            <tr><td class="width-100 align-center">A</td></tr>
-            <tr><th class="width-100 align-center">B</th></tr>
-            <tr><td class="width-100 align-center">C</td></tr>
-            <tr><td class="width-100 align-center">D</td></tr>
-            <tr><td class="width-100 align-center">E</td></tr>
-            <tr><td class="width-100 align-center">F</td></tr>
-            <tr><td class="width-100 align-center">G</td></tr>
-            <tr><td class="width-100 align-center">H</td></tr>
-            <tr><td class="width-100 align-center">I</td></tr>
-            <tr><td class="width-100 align-center">J</td></tr>
-            <tr><td class="width-100 align-center">K</td></tr>
-            <tr><td class="width-100 align-center">L</td></tr>
-            <tr><td class="width-100 align-center">M</td></tr>
-            <tr><td class="width-100 align-center">N</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <!-- end col.1 -->
 
-        <!-- col.2 -->
+        <!-- col-8 -->
         <div class="col-md-8 h-100 overflow-auto pt-3" >
-          <p class="h1 font-lato"></i><strong>Jetstar Singles’ Day Sale Has 111,111 Discounted Seats On Sale From 7 – 18 Nov 2019. Fastest Fingers First.</strong></p>
+        </div><!-- / .col-8 -->
 
-          <p class="h2 font-lato">Singles’ Day Sale starts now! 111,111 seats on sale,  fastest fingers first
-          Jetstar has announced Singles’ Day Sale fares on their website from 7 to 18 November 2019.</p>
+        <!-- col-4 -->
+        <div class="col-md-4 h-100 overflow-auto pt-3">
+        </div><!-- / .col-4 -->        
 
-          <p class="font-crimson-text">
-            Enjoy irresistible sale fares to Taipei, Bangkok, Bali, Okinawa and more.
-          </p>
+    </div> <!-- /.row -->
 
-          <p class="font-crimson-text">
-            Fares start from as affordable as S$57!
-          </p>
-          <p class="font-crimson-text">
-            ^ Sale starts on 7 Nov 10am and ends 18 Nov 11.59pm, unless sold out prior. Other conditions apply, see below.
-          </p>
-
-          <table  class="table table-bordered ">
-                  <thead class="wpsm-thead wpsm-thead-default">
-            <tr>              
-                                                <th>Destinations</th>
-                  
-                
-                                                <th>Travel Period</th>
-                  
-                
-                                                <th>Fares from</th>
-                  
-                
-                          </tr>
-          </thead>
-          <tbody class="wpsm-tbody">
-                                <tr>                              <td class="">                                                   Penang                                </td>
-                                              <td class="">                                                   6 Jan - 20 Jan 20<br>
-17 Feb - 15 Mar 20<br>
-15 Apr - 28 Apr 20<br>
-13 May - 30 Sep 20                                </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$57</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Bali (Denpasar)                               </td>
-                                              <td class="">                                                   6 Jan - 31 Mar 20<br>
-15 Apr - 28 Apr 20                                </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$85</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Taipei                                </td>
-                                              <td class="">                                                   6 Jan - 20 Jan 20<br>
-3 Feb - 11 Mar 20<br>
-1 Jul - 30 Sep 20                               </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$104</a>                               </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Phuket                                </td>
-                                              <td class="">                                                   6 Jan - 31 Mar 20<br>
-15 Apr - 28 Apr 20<br>
-13 May - 30 Sep 20                                </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$60</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Yangon                                </td>
-                                              <td class="">                                                   7 Jan - 21 Jan 20<br>
-4 Feb - 31 Mar 20<br>
-13 May - 30 Sep 20                                </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$91</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Darwin                                </td>
-                                              <td class="">                                                   6 Feb - 29 Mar 20<br>
-13 May - 23 Jun 20<br>
-1 Aug - 24 Sep 20<br>                               </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$105</a>                               </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Siem Reap                               </td>
-                                              <td class="">                                                   6 Jan - 31 Mar 20<br>
-15 Apr - 28 Apr 20<br>
-13 May - 29 Sep 20                                </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$91</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Hong Kong                               </td>
-                                              <td class="">                                                   6 Jan - 17 Jan 20<br>
-13 Feb - 31 Mar 20                                </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$91</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Kuala Lumpur                                </td>
-                                              <td class="">                                                   6 Jan - 20 Jan 20<br>
-11 Feb - 31 Mar 20<br>
-15 Apr - 28 Apr 20<br>
-13 May - 30 Sep 20                                </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$57</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Ho Chi Minh City                                </td>
-                                              <td class="">                                                   6 Jan - 20 Jan 20<br>
-10 Feb - 31 Mar 20<br>
-15 Apr - 28 Apr 20<br>
-18 Aug - 30 Sep 20                                </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$71</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Da Nang                               </td>
-                                              <td class="">                                                   6 Jan - 20 Jan 20<br>
-16 Feb - 8 Mar 20<br>
-15 Apr - 28 Apr 20<br>
-18 Aug - 30 Sep 20                                </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$81</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Phnom Penh                                </td>
-                                              <td class="">                                                   6 Jan - 20 Jan 20<br>
-3 Feb - 31 Mar 20<br>
-13 May - 30 Sep 20                                </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$81</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Okinawa (Naha)                                </td>
-                                              <td class="">                                                   3 Feb - 6 Mar 20<br>
-3 Apr - 27 Apr 20<br>
-6 Jul - 28 Sep 20                               </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$135</a>                               </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Manila                                </td>
-                                              <td class="">                                                   15 Jan - 26 Mar 20<br>
-13 May - 30 Sep 20                                </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$95</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Clark                               </td>
-                                              <td class="">                                                   15 Jan - 26 Mar 20<br>
-13 May - 30 Sep 20                                </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$95</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Haikou                                </td>
-                                              <td class="">                                                   9 Feb - 30 Mar 20<br>
-15 Apr - 29 Apr 20<br>
-1 Jul - 26 Sep 20                               </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$95</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Shantou / Jieyang                               </td>
-                                              <td class="">                                                   12 Feb - 30 Mar 20<br>
-15 Apr - 27 Apr 20<br>
-1 Jul - 26 Sep 20                               </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$145</a>                               </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Jakarta                               </td>
-                                              <td class="">                                                   8 Jan - 31 Mar 20<br>
-15 Apr - 28 Apr 20<br>
-8 Jul - 30 Sep 20                               </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$68</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Bangkok                               </td>
-                                              <td class="">                                                   6 Jan - 31 Mar 20<br>
-13 May - 30 Sep 20                                </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$70</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Medan (Kualanamu)                               </td>
-                                              <td class="">                                                   8 Jan - 31 Mar 20<br>
-15 Apr - 28 Apr 20<br>
-8 Jul - 30 Sep 20                               </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$71</a>                                </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Surabaya                                </td>
-                                              <td class="">                                                   8 Jan - 31 Mar 20<br>
-15 Apr - 28 Apr 20<br>
-8 Jul - 30 Sep 20                               </td>
-                                              <td>                                                    <a href="https://www.jetstar.com/sg/en/deals" target="_blank" class="external" rel="nofollow">S$75</a>                                </td>
-                                          </tr>
-                    </tbody>
-        </table>
-
-
-
-
-
-
-          <p class="h1 font-lato"><strong>Singapore Airlines/SilkAir has a promo that takes you to Japan from S$398 if you book by 30 Nov 19</strong></p>
-          <p class="h2 font-lato">Discover the beauty of Japan with Singapore Airlines and SilkAir</p>
-
-          <p class="font-crimson-text">Enjoy special fares to some of Japan’s top cities from as affordable as SGD398 when you book from now till 30 November 2019.
-
-Sale period
-
-Early Bird Fares: Now to 31 March 2020
-Special Fares: Now to 30 November 2019
-Outbound travel period
-
-Early Bird Fares: Book at least 5 days before departure
-Special Fares: Selected travel period from 1 January to 31 March 2020</p>
-<table class="table table-bordered">
-                  <thead class="wpsm-thead wpsm-thead-default">
-            <tr>              
-                                                <th>Destinations</th>
-                  
-                
-                                                <th>Early Bird Fares</th>
-                  
-                
-                                                <th>Special Fares</th>
-                  
-                
-                          </tr>
-          </thead>
-          <tbody class="wpsm-tbody">
-                                <tr>                              <td class="">                                                   Nagoya                                </td>
-                                              <td class="">                                                   <a href="https://brwd.me/XA3osTN" target="_blank" class="external" rel="nofollow">S$718</a>                               </td>
-                                              <td>                                                    <a href="https://brwd.me/XA3osTN" target="_blank" class="external" rel="nofollow">S$468</a>                               </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Tokyo                               </td>
-                                              <td class="">                                                   <a href="https://brwd.me/XA3osTN" target="_blank" class="external" rel="nofollow">S$648</a>                               </td>
-                                              <td>                                                    <a href="https://brwd.me/XA3osTN" target="_blank" class="external" rel="nofollow">S$608</a>                               </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Hiroshima                               </td>
-                                              <td class="">                                                   <a href="https://brwd.me/XA3osTN" target="_blank" class="external" rel="nofollow">S$628</a>                               </td>
-                                              <td>                                                    <a href="https://brwd.me/XA3osTN" target="_blank" class="external" rel="nofollow">S$398</a>                               </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Fukuoka                               </td>
-                                              <td class="">                                                   <a href="https://brwd.me/XA3osTN" target="_blank" class="external" rel="nofollow">S$758</a>                               </td>
-                                              <td>                                                    <a href="https://brwd.me/XA3osTN" target="_blank" class="external" rel="nofollow">S$498</a>                               </td>
-                                          </tr>
-                                <tr>                              <td class="">                                                   Osaka                               </td>
-                                              <td class="">                                                   <a href="https://brwd.me/XA3osTN" target="_blank" class="external" rel="nofollow">S$768</a>                               </td>
-                                              <td>                                                    <a href="https://brwd.me/XA3osTN" target="_blank" class="external" rel="nofollow">S$588</a>                               </td>
-                                          </tr>
-                    </tbody>
-        </table>
-
-        </div>
-        <!-- end col.2 -->
-
-    </div> 
-    <!-- end row.main -->
-
-  </div>
+  </div><!-- /.container -->
   <script src="static/lib/js/jquery.min.js"></script>
   <script src="static/lib/js/popper.js"></script>
   <script src="static/lib/js/bootstrap.min.js"></script>
