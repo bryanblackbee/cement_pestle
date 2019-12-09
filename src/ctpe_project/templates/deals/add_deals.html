@@ -1,0 +1,15 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h2>Add Deals</h2>
+<form method="POST" action="">
+{% csrf_token %}
+{{ form|crispy }}
+{{ deals.management_form }}
+{% for d in deals %}
+{{d|crispy}}
+{% endfor %}
+<input type="submit" class="btn btn-success" value="Add Deals">
+</form>
+{% endblock content %}
