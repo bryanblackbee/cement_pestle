@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>CTPE - Home</title>
+  <title>{% block title %} CTPE - Home {% endblock title %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="static/lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'lib/css/bootstrap.min.css' %}">
 
-  <link rel="stylesheet" href="static/lib/css/regular.min.css">
-  <link rel="stylesheet" href="static/lib/css/fontawesome.min.css">
-  <link rel="stylesheet" href="static/lib/css/solid.min.css">
+  <link rel="stylesheet" href="{% static 'lib/css/regular.min.css' %}">
+  <link rel="stylesheet" href="{% static 'lib/css/fontawesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'lib/css/solid.min.css' %}">
 
-  <link rel="stylesheet" href="static/app/project.css">
+  <link rel="stylesheet" href="{% static 'app/project.css' %}">
 
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
     <div class="row mx-0 w-100"> <!-- .nav for desktop -->
       <nav class="nav shadow-sm w-100 py-2 mb-1 d-none d-sm-block">
           <div class="d-flex flex-row justify-content-left">
-          <a class="nav-link navbar-hero d-block h5 my-0" href="#">CEMENT PESTLE</a>
+          <a class="nav-link navbar-hero d-block h5 my-0" href="{% url 'home' %}">CEMENT PESTLE</a>
           <a class="nav-link navbar-item " href="#">APPAREL</a>
           <a class="nav-link navbar-item " href="#">DINING</a>
           <a class="nav-link navbar-item " href="#">TRAVEL</a>
@@ -54,17 +55,19 @@
 
         <!-- col-8 -->
         <div class="col-md-8 h-100 overflow-auto pt-3" >
+          {% block content %}{% endblock content %}
         </div><!-- / .col-8 -->
 
         <!-- col-4 -->
         <div class="col-md-4 h-100 overflow-auto pt-3">
+          {% block right_bar %}{% endblock right_bar %}
         </div><!-- / .col-4 -->        
 
     </div> <!-- /.row -->
 
   </div><!-- /.container -->
-  <script src="static/lib/js/jquery.min.js"></script>
-  <script src="static/lib/js/popper.js"></script>
-  <script src="static/lib/js/bootstrap.min.js"></script>
+  <script src="{% static 'lib/js/jquery.min.js' %}"></script>
+  <script src="{% static 'lib/js/popper.js' %}"></script>
+  <script src="{% static 'lib/js/bootstrap.min.js' %}"></script>
 </body>
 </html>

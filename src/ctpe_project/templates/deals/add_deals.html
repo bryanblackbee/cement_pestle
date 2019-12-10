@@ -1,15 +1,33 @@
 {% extends '_base.html' %}
 {% load crispy_forms_tags %}
 
+{% block title %} CTPE - Add Deals {% endblock title %}
 {% block content %}
 <h2>Add Deals</h2>
-<form method="POST" action="">
-{% csrf_token %}
-{{ form|crispy }}
-{{ deals.management_form }}
-{% for d in deals %}
-{{d|crispy}}
-{% endfor %}
-<input type="submit" class="btn btn-success" value="Add Deals">
-</form>
+<div class="mb-4">
+	<form method="POST" action="">
+	{% csrf_token %}
+
+	<div class="form-row">
+		<div class="col-md-4">
+		{{ form.category_id|as_crispy_field }}
+		</div>
+	</div>
+
+	{{ deals.management_form }}
+	<div class="h4">Add Deals Here</div>
+	{% for d in deals %}
+		<div class="form-row">
+			<div class="col-md-4">
+			{{d.deal_name|as_crispy_field}}
+			</div>
+			<div class="col-md-8">
+				{{d.deal_text|as_crispy_field}}
+			</div>
+		</div>
+	{% endfor %}
+	<input type="submit" class="btn btn-success" value="Add Deals">
+	</form>
+</div>
+
 {% endblock content %}

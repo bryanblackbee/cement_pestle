@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Libraries
+    'crispy_forms',
+
     # Applications
     'ctpe_main_app.apps.CtpeMainAppConfig',
     'ctpe_deals_app.apps.CtpeDealsAppConfig',
@@ -79,12 +82,8 @@ WSGI_APPLICATION = 'ctpe_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER' : 'postgres',
-        'PASSWORD' : 'postgres',
-        'HOST' : 'db',
-        'PORT' : 5432
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -127,3 +126,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'ctpe_main_app', 'static')]
+
+# django-crispy-forms
+# https://django-crispy-forms.readthedocs.io/en/latest/install.html
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+

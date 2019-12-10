@@ -17,8 +17,11 @@ from django.contrib import admin
 from django.urls import path
 
 from ctpe_main_app.views import *
+from ctpe_deals_app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', HomepageView.as_view())
+    path('', HomepageView.as_view(), name='home'),
+    
+    path('deals/add_deal', AddDealsView.as_view(), name='add_deals'),
 ]

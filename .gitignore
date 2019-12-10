@@ -1,6 +1,6 @@
 *.DS_Store
 *cpython-34.pyc
 *__pycache__*
-*/*/migrations/*.py
+*/*/*/migrations/*.py
 *.sqlite3
 jupyter/.ipynb_checkpoints/*.ipynb
