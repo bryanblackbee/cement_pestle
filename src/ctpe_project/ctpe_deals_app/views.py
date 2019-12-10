@@ -4,13 +4,13 @@ from django.shortcuts import render
 from django.views.generic import (TemplateView, FormView)
 
 from ctpe_deals_app.models import (Category, Deal)
-from ctpe_deals_app.forms import (ChooseCategoryForm, AddDealsFormset)
+from ctpe_deals_app.forms import (AddMultipleDealsForm, AddDealsFormset)
 
 from django.urls import reverse
 
 class AddDealsView(FormView):
 	template_name = 'deals/add_deals.html'
-	form_class = ChooseCategoryForm
+	form_class = AddMultipleDealsForm
 
 	def get_context_data(self, **kwargs):
 		context = super(AddDealsView, self).get_context_data(**kwargs)

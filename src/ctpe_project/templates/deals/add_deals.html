@@ -5,29 +5,17 @@
 {% block content %}
 <h2>Add Deals</h2>
 <div class="mb-4">
-	<form method="POST" action="">
-	{% csrf_token %}
-
-	<div class="form-row">
-		<div class="col-md-4">
-		{{ form.category_id|as_crispy_field }}
-		</div>
-	</div>
-
-	{{ deals.management_form }}
-	<div class="h4">Add Deals Here</div>
-	{% for d in deals %}
-		<div class="form-row">
-			<div class="col-md-4">
-			{{d.deal_name|as_crispy_field}}
-			</div>
-			<div class="col-md-8">
-				{{d.deal_text|as_crispy_field}}
-			</div>
-		</div>
-	{% endfor %}
-	<input type="submit" class="btn btn-success" value="Add Deals">
-	</form>
+	{% crispy form %}
 </div>
-
+{% block jquery_include %}
+<script type="text/javascript">
+    $('.formset_row-{{ deals.prefix }}').formset({
+        addText: 'Add Another Deal',
+        addCssClass : 'btn btn-info btn-sm mb-4',
+        deleteText: 'Remove Deal',
+        deleteCssClass : 'btn btn-danger btn-sm mb-1 mt-2 h-10 align-bottom',
+        prefix: '{{ deals.prefix }}',
+    });
+</script>
+{% endblock jquery_include %}
 {% endblock content %}

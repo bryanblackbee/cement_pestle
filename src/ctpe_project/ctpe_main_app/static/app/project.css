@@ -9,6 +9,26 @@
   color:black;
 }
 
+.w-90{
+	width: 90%;
+}
+
+.w-40{
+	width: 40%;
+}
+
+.w-55{
+	width: 55%;
+}
+
 .w-98{
 	width: 98%;
+}
+
+.h-10{
+	height:10%;
+}
+
+.gray{
+	background-color: WHITESMOKE;
 }

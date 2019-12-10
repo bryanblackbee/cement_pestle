@@ -1,0 +1,26 @@
+{% load crispy_forms_tags %}
+{{ formset.management_form }}
+<div class="h4">Add Deals Here</div>
+{% for deal in formset.forms %}
+	<!-- -->
+	{# First add the hidden fields #}
+	{% if forloop.first %}
+	    {% for hidden in form.hidden_fields %}
+	        {{ hidden }}
+	    {% endfor %}
+	{% endif %}
+	<!-- -->
+	{# Then add all the visible fields #}
+	<div class="form-row formset_row-{{ formset.prefix }} gray mt-1 mb-1 p-2">
+		<div class="d-flex flex-row w-90">
+			<div class="w-40 mr-2">
+				{{deal.deal_name|as_crispy_field}}
+				{{deal.deal_name.errors.as_ul }}
+			</div>
+			<div class="w-55">
+				{{deal.deal_text|as_crispy_field}}
+				{{deal.deal_name.errors.as_ul }}
+			</div>
+		</div>
+	</div>
+{% endfor %}
