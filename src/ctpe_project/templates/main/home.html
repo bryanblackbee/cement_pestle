@@ -11,5 +11,6 @@
 {% endblock content %}
 
 {% block right_bar %}
-<a href="{% url 'add_deals' %}" class="btn btn-info">Submit Deals</a>
+<div class="mb-1"><a href="{% url 'add_deals' %}" class="btn btn-info">Submit Deals</a></div>
+<div><a href="{% url 'add_new_deal' %}" class="btn btn-primary">Submit New Deal</a></div>
 {% endblock right_bar %}

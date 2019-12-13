@@ -1,3 +1,4 @@
+ctpe_project/templates/_base.html
 [[source]]
 name = "pypi"
 url = "https://pypi.org/simple"
@@ -6,8 +7,11 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "==2.2.7"
-psycopg2-binary = "*"
+django-crispy-forms = "==1.8.1"
+psycopg2-binary = "==2.8.4"
+pytz = "==2019.3"
+sqlparse = "==0.3.0"
+Django = "==2.2.7"
 
 [requires]
-python_version = "3.7.2"
+python_version = "3.7"

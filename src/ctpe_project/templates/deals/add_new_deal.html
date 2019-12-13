@@ -1,0 +1,10 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %} CTPE - Add New Deal {% endblock title %}
+{% block content %}
+<h2>Add New Deal</h2>
+<div class="mb-4">
+	{% crispy form %}
+</div>
+{% endblock content %}

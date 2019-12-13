@@ -9,7 +9,7 @@ class HomepageView(TemplateView):
 	
 	def get_context_data(self, **kwargs):
 		context = super(HomepageView, self).get_context_data(**kwargs)
-		deals = Deal.objects.all()
+		deals = Deal.objects.all().order_by('-id')
 
 		context['deals'] = deals 
 		return context

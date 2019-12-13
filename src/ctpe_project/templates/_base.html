@@ -28,9 +28,9 @@
       <nav class="nav shadow-sm w-100 py-2 mb-1 d-none d-sm-block">
           <div class="d-flex flex-row justify-content-left">
           <a class="nav-link navbar-hero d-block h5 my-0" href="{% url 'home' %}">CEMENT PESTLE</a>
-          <a class="nav-link navbar-item " href="#">APPAREL</a>
-          <a class="nav-link navbar-item " href="#">DINING</a>
-          <a class="nav-link navbar-item " href="#">TRAVEL</a>
+          <a class="nav-link navbar-item " href="{% url 'list_deals_category' category='apparel'%}">APPAREL</a>
+          <a class="nav-link navbar-item " href="{% url 'list_deals_category' category='dining'%}">DINING</a>
+          <a class="nav-link navbar-item " href="{% url 'list_deals_category' category='travel'%}">TRAVEL</a>
           </div>
       </nav><!-- /.nav for desktop -->
 

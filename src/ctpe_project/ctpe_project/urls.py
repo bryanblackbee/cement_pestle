@@ -24,4 +24,6 @@ urlpatterns = [
     path('', HomepageView.as_view(), name='home'),
     
     path('deals/add_deal', AddDealsView.as_view(), name='add_deals'),
+    path('deals/add_new_deal', AddNewDealView.as_view(), name='add_new_deal'),
+    path('deals/category/<str:category>', DealCategoryView.as_view(), name='list_deals_category'),
 ]
